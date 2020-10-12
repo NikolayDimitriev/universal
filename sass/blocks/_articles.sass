@@ -162,9 +162,41 @@
             margin-left: 8.13px
             margin-right: 6.12px
     &-check
-        border: 1px solid red
         grid-row: 1
         grid-column: 4
+        background-color: $bluegreen
+        color: $white-text
+        &__block
+            border-bottom: 1px solid $check-border-color
+            padding-top: 24px
+            padding-right: 22px
+            padding-left: 25px
+        &__wrapper
+            background: url(../img/articles/File.png) no-repeat top right
+        &__title
+            font-family: 'Roboto Slab', serif
+            font-size: 16px
+            line-height: 25px
+            margin-top: 0
+            margin-bottom: 10px
+        &__format
+            display: inline-block
+            font-size: 14px
+            line-height: 20px
+            color: $check-format-file-color
+            margin-bottom: 19px
+        &__download
+            display: flex
+            align-items: center
+            justify-content: center
+            text-decoration: none
+            color: inherit
+            padding-top: 12px
+        &__text
+            margin-left: 11px
+            font-size: 14px
+            line-height: 20px
+            +bold
     &-tag
         border: 1px solid red
         grid-column: 4
