@@ -2,12 +2,13 @@
     &-block
         display: grid
         grid-template-columns: repeat(4, 1fr)
-        grid-template-rows: repeat(4, 1fr)
+        grid-template-rows: repeat(4, min-content)
         grid-gap: 30px
         margin-bottom: 60px
         &__item
             border-radius: 10px
             background-color: $white-text
+            height: 370px
     &-work
         grid-column: span 2
         grid-row: span 2
@@ -21,7 +22,7 @@
             border-bottom: 1px solid $tabs-border-color
         &__subtitle
             display: inline-block
-            margin-bottom: 20px
+            margin-bottom: 18px
             font-size: 12px
             line-height: 15px
             letter-spacing: 0.5px
@@ -42,7 +43,7 @@
             max-width: 228px
             font-size: 14px
             line-height: 20px
-            margin-bottom: 49px
+            margin-bottom: 47px
         &__comment
             padding-left: 35px
             padding-top: 13px
@@ -107,7 +108,7 @@
             font-size: 12px
             line-height: 15px
             display: block
-            margin-bottom: 121px
+            margin-bottom: 115px
         &__theme
             display: inline-block
             margin-bottom: 23px
@@ -166,6 +167,7 @@
         grid-column: 4
         background-color: $bluegreen
         color: $white-text
+        height: 170px
         &__block
             border-bottom: 1px solid $check-border-color
             padding-top: 24px
@@ -191,7 +193,8 @@
             justify-content: center
             text-decoration: none
             color: inherit
-            padding-top: 12px
+            padding-top: 13px
+            padding-bottom: 13px
         &__text
             margin-left: 11px
             font-size: 14px
@@ -215,7 +218,7 @@
             flex-wrap: wrap
             padding: 25px 0px 15px 25px
         &__button
-            padding: 5px 15px
+            padding: 4px 15px
             border-radius: 5px
             border: 1px solid $tabs-border-color
             background-color: inherit
@@ -229,17 +232,70 @@
             &:hover
                 border: 1px solid $btn-color
     &-tools
-        border: 1px solid red
         grid-row: 3 / 5
-    &-references
+        display: flex
+        flex-direction: column
+        height: 370px
+        &__image
+            border-radius: 10px 10px 0 0
+            height: 275px
+        &__title
+            font-family: 'Roboto Slab', serif
+            font-size: 16px
+            line-height: 25px
+            color: $bg-section
+            margin: 0
+            padding: 15px 52px 30px 25px
+    &-repeat
         height: 170px
-        width: 263px
-        border: 1px solid red
-    &-stress
-        border: 1px solid red
+        padding: 25px 25px 30px 25px
+        &__title
+            margin: 0
+            margin-bottom: 5px
+            font-family: 'Roboto Slab', serif
+            font-size: 16px
+            line-height: 25px
+            color: $bg-section
+        &__text
+            display: inline-block
+            margin-bottom: 8px
+            font-size: 14px
+            line-height: 20px
+            color: $tabs-text-color
+        &__data
+            font-size: 12px
+            line-height: 15px
+            color: $input-text
     &-customer
-        border: 1px solid red
-    &-free
-        border: 1px solid red
+        &__text
+            margin-bottom: 28px
     &-social
-        border: 1px solid red
+        height: 170px
+        padding: 30px 25px 40px 25px
+        &__title
+            margin: 0
+            font-family: 'Roboto Slab', serif
+            font-size: 20px
+            line-height: 25px
+            color: $bg-section
+            text-align: center
+            margin-bottom: 25px
+        &__block
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding: 0px 12px
+        &__icon
+            &--block
+                width: 50px
+                height: 50px
+                border-radius: 50%
+                display: flex
+                justify-content: center
+                align-items: center
+            &--facebook
+                background-color: $facebook-bg
+            &--twitter
+                background-color: $twitter-bg
+            &--youtube
+                background-color: $youtube-bg
