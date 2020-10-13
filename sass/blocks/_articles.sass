@@ -198,9 +198,36 @@
             line-height: 20px
             +bold
     &-tag
-        border: 1px solid red
         grid-column: 4
         grid-row: 2 / 4
+        &__title
+            margin: 0
+            padding: 20px 25px
+            font-size: 14px
+            line-height: 20px
+            letter-spacing: 0.5px
+            text-transform: uppercase
+            color: $bg-section
+            border-bottom: 1px solid $tabs-border-color
+            +bold
+        &__block
+            display: flex
+            flex-wrap: wrap
+            padding: 25px 0px 15px 25px
+        &__button
+            padding: 5px 15px
+            border-radius: 5px
+            border: 1px solid $tabs-border-color
+            background-color: inherit
+            margin-bottom: 15px
+            font-size: 14px
+            line-height: 20px
+            color: $bg-section
+            +bold
+            &:not(:last-child)
+                margin-right: 10px
+            &:hover
+                border: 1px solid $btn-color
     &-tools
         border: 1px solid red
         grid-row: 3 / 5
