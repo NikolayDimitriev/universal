@@ -88,6 +88,8 @@
             line-height: 20px
             cursor: pointer
             +bold
+            &:hover
+                background-color: $hover-btn-color
         &__icon
             width: 20px
             height: 20px
@@ -146,11 +148,14 @@
         line-height: 20px
         cursor: pointer
         +bold
+        &:hover
+            background-color: $hover-btn-color
     &__arrow
         margin-left: 5px
     &-same
         padding: 25px 25px 30px 25px
         max-height: 170px
+        cursor: pointer
         &__title
             font-family: 'Roboto Slab', serif
             font-size: 16px
