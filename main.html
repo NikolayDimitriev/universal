@@ -803,7 +803,10 @@
             <h2 class="footer__title">Подпишитесь на нашу рассылку</h2>
             <!-- /.footer__title -->
             <form action="send.php" method="POST" class="form footer__form">
-                <input type="email" class="footer__input" required placeholder="Email">
+                <div class="footer__input-group">
+                    <input type="email" class="footer__input" required placeholder="Email" name="email">
+                </div>
+                <!-- /.footer__input-group -->
                 <button class="button footer__button">Подписаться</button>
             </form>
             <!-- /.form footer__form -->
@@ -960,6 +963,8 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/index.js"></script>
 </body>
