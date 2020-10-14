@@ -16,7 +16,8 @@ var lifehackSlider = new Swiper('.lifehack-container', {
 
 const hero = document.querySelector('.hero'),
   heroTabs = hero.querySelectorAll('.hero-tabs__item'),
-  heroSlids = hero.querySelectorAll('.hero-slider__item');
+  heroSlids = hero.querySelectorAll('.hero-slider__item'),
+  news = document.querySelector('.news');
 
 hero.addEventListener('click', function(e) {
   const target = e.target;
@@ -42,5 +43,20 @@ hero.addEventListener('click', function(e) {
     });
     // делаю другой слайд активным
     heroSlids[count].classList.add('hero-slider__item--active');
+  }
+});
+
+news.addEventListener('click', function(e) {
+  const target = e.target;
+
+  if (target.closest('.news-block__note')) {
+    const img = target.closest('.news-block__note');
+    if (img.classList.contains('news-block__note--active')) {
+      img.src = 'img/news/Bookmark.svg';
+      img.classList.remove('news-block__note--active');
+    } else {
+      img.src = 'img/news/Bookmark-red.svg';
+      img.classList.add('news-block__note--active');
+    }
   }
 });
