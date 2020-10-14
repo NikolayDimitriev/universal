@@ -5,6 +5,7 @@
         height: 570px
     &-slider
         &__item
+            display: none
             position: relative
             height: 100%
             object-fit: cover
@@ -17,6 +18,9 @@
                 left: 0
                 background: linear-gradient(0deg, rgba(64, 48, 61, 0.35), rgba(64, 48, 61, 0.35))
                 border-radius: 10px
+            &--active
+                display: block
+                transition: transform 
         &__image
             width: 100%
             height: 100%
