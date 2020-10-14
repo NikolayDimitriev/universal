@@ -71,9 +71,20 @@
             line-height: 20px
             color: $tabs-text-color
         &__item
-            margin-bottom: 15px
+            margin-bottom: 12px
         &__link
             color: inherit
+            display: inline-block
+            &::after
+                display: block
+                content: ""
+                height: 3px
+                width: 0%
+                background-color: $btn-color
+                transition: width 0.4s ease-in-out
+            &:hover
+                &::after
+                    width: 100%
     &-social
         padding-top: 30px
         padding-bottom: 23px
@@ -92,6 +103,17 @@
             color: $bg-section
             margin-right: 30px
             +bold
+            &:not(:first-child)
+                &::after
+                    display: block
+                    content: ""
+                    height: 3px
+                    width: 0%
+                    background-color: $btn-color
+                    transition: width 0.4s ease-in-out
+                &:hover
+                    &::after
+                        width: 100%
         &__links
             display: flex
             justify-content: space-between
