@@ -9,7 +9,15 @@
             &__item
                 &:not(:last-child)
                     margin-right: 12px
-    .popular, .articles, .investigation, .news, .lifehack, .footer
+    .popular
+        &-block
+            padding: 20px 0
+            flex-wrap: wrap
+            &__item
+                padding: 0 10px
+            &__info
+                margin-right: 0
+    .articles, .investigation, .news, .lifehack, .footer
         display: none
 @media (max-width: 992px)
     body
@@ -86,6 +94,21 @@
         padding-top: 460px
         background-color: $bg-section
         padding-bottom: 20px
+    .popular
+        &-block
+            max-width: 700px
+            &__item
+                flex-basis: 50%
+                padding: 8px 15px
+                &:nth-child(1)
+                    border-bottom: 1px solid $tabs-text-color
+                &:nth-child(2)
+                    border-bottom: 1px solid $tabs-text-color
+                    border-right: none
+            &__link
+                width: 100%
+                display: flex
+                justify-content: space-between
 @media (max-width: 767px)
     .container
         max-width: 576px
@@ -107,6 +130,15 @@
     .hero
         &-block
             height: 500px
+    .popular
+        &-block
+            width: 100%
+            &__item
+                flex-basis: 100%
+                padding: 8px 15px
+                &:not(:last-child)
+                    border-bottom: 1px solid $tabs-text-color
+                    border-right: none
 @media (max-width: 480px)
     .hero
         &-block
