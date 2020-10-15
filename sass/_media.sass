@@ -98,6 +98,10 @@
         max-width: 700px
     .navbar
         padding-bottom: 0
+        &-block
+            &__menu
+                &-button
+                    display: flex
         &__search
             display: none
         &-recede
@@ -131,18 +135,16 @@
             &__link
                 &::after
                     display: none
-            &__button
-                display: flex
-            &__mobile
-                &--visible
+            &--mobile
+                &-visible
                     margin: 0
                     display: flex
                     flex-direction: column
                     justify-content: center
                     align-items: center
-        &-search
-            &__mobile
-                &--visible
+        &__search
+            &--mobile
+                &-visible
                     display: flex
     .menu
         &-button
