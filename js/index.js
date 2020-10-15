@@ -18,12 +18,21 @@ document.addEventListener('DOMContentLoaded', function() {
   const hero = document.querySelector('.hero'),
     heroTabs = hero.querySelectorAll('.hero-tabs__item'),
     heroSlids = hero.querySelectorAll('.hero-slider__item'),
-    news = document.querySelector('.news');
+    news = document.querySelector('.news'),
+    header = document.querySelector('.navbar');
+  
+  header.addEventListener('click', function(e) {
+    const target = e.target;
+    
+    if (target.closest('.menu-button')) {
+      header.querySelector('.navbar-bottom').classList.toggle('navbar-bottom--visible');
+    }
+  });
   
   hero.addEventListener('click', function(e) {
     const target = e.target;
     let count = 0;
-  
+
     // если кликнули по табу
     if (target.closest('.hero-tabs__item')) {
       //удаляю класс active у всех табов

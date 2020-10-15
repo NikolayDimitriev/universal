@@ -1,11 +1,17 @@
 .navbar
     background-color: $bg-section
-    padding: 15px 0
+    padding-bottom: 15px
     &-block
         display: flex
         align-items: center
         justify-content: space-between
         color: $white-text
+        padding-top: 15px
+        padding-bottom: 15px
+    &-bottom
+        display: none
+        &--visible
+            display: block
     &-logo
         display: flex
         align-items: center
@@ -28,6 +34,8 @@
         justify-content: space-between
         margin-left: 52px
         margin-right: 94px
+        &__button
+            display: none
         &__item
             &:not(:last-child)
                 margin-right: 30px
@@ -48,7 +56,7 @@
                 &::after
                     width: 100%
     &-recede
-        height: 465px
+        height: 450px
 .search
     display: flex
     position: relative

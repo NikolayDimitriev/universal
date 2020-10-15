@@ -1,19 +1,115 @@
 @media (max-width: 1200px)
     .container
         max-width: 960px
+    .navbar
+        &-menu
+            padding-left: 0
+            margin-left: 15px
+            margin-right: 40px
+            &__item
+                &:not(:last-child)
+                    margin-right: 12px
+    .popular, .articles, .investigation, .news, .lifehack, .footer
+        display: none
 @media (max-width: 992px)
-    .container
-        max-width: 700px
+    body
+        padding-top: 70px
     button
         cursor: default
-    a
+    a.button
         &:hover
             cursor: default
+            background-color: inherit
+    .container
+        max-width: 700px
+    .navbar
+        padding-bottom: 0
+        &__search
+            display: none
+        &-recede
+            display: none
+        &__mobile
+            &_fixed
+                position: fixed
+                left: 0
+                top: 0
+                right: 0
+                z-index: 99
+                background-color: $bg-section
+        &-bottom
+            position: fixed
+            bottom: 0
+            left: 0
+            right: 0
+            top: 70px
+            padding-top: 15px
+            overflow-y: scroll
+            background-color: $bg-section
+            color: $white-text
+        &-menu
+            display: none
+            &__item
+                &--mobile
+                    margin-bottom: 10px
+            &__link
+                &::after
+                    display: none
+            &__button
+                display: flex
+            &__mobile
+                &--visible
+                    display: flex
+                    flex-direction: column
+                    justify-content: center
+                    align-items: center
+        &-search
+            &__mobile
+                &--visible
+                    display: flex
+                    margin-bottom: 15px
+    .menu
+        &-button
+            width: 16px
+            height: 13px
+            display: flex
+            align-items: center
+            justify-content: space-between
+            flex-direction: column
+            border: none
+            background-color: inherit
+            outline: 0
+            &__line
+                width: 16px
+                height: 1px
+                background-color: $white-text
+    .hero
+        padding-top: 460px
+        background-color: $bg-section
+        padding-bottom: 20px
 @media (max-width: 767px)
     .container
         max-width: 576px
         width: 93%
+    .hero
+        &-block
+            height: 460px
+        &-slider
+            display: none
+        &-tabs
+            width: 100%
+            border-radius: 10px
+            &__item
+                &--orange
+                    padding-bottom: 19px
 @media (max-width: 698px)
+    .container
 @media (max-width: 576px)
+    .hero
+        &-block
+            height: 500px
 @media (max-width: 480px)
-@media  (max-width: 350px )
+    .hero
+        &-block
+            height: 550px
+@media (max-width: 350px)
+    .container

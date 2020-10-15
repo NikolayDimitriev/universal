@@ -11,7 +11,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile_fixed">
         <div class="container">
             <div class="navbar-block">
                 <div class="navbar-logo">
@@ -53,12 +53,53 @@
                     </button>
                 </form>
                 <!-- /.navbar__search -->
-
+                <button class="menu-button navbar-menu__button">
+                    <span class="menu-button__line"></span>
+                    <span class="menu-button__line"></span>
+                    <span class="menu-button__line"></span>
+                </button>
             </div>
             <!-- /.navbar-block -->
             <div class="navbar-recede">
             </div>
             <!-- /.navbar-recede -->
+            <nav class="navbar-bottom">
+                <div class="container">
+                    <ul class="navbar-menu navbar-menu__mobile--visible">
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <form action="#" class="search navbar__search navbar-search__mobile--visible">
+                                <input type="text" class="search__input" placeholder="Поиск" required minlength="2">
+                                <button class="search__button">
+                                    <img src="img/header/Search.png" alt="Иконка поиска">
+                                </button>
+                            </form>
+                            <!-- /.navbar__search -->
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#" class="navbar-menu__link">Статьи</a>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#" class="navbar-menu__link">Новости</a>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#" class="navbar-menu__link">Курсы</a>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#" class="navbar-menu__link">HTML</a>
+                        </li>         
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#" class="navbar-menu__link">CSS</a>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#" class="navbar-menu__link">JavaScript</a>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#" class="navbar-menu__link">Web Design</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- /.navbar-bottom  -->
         </div>
         <!-- /.container -->
     </header>
