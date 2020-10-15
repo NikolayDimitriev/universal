@@ -87,7 +87,6 @@
         &-same
             padding: 15px 15px 15px 15px
     .footer
-        display: none
         &-links
             &__block
                 flex-basis: 33%
@@ -282,6 +281,8 @@
                 margin-left: 35px
                 margin-right: 60px
             &__item
+                &::after
+                    display: none
                 &:nth-child(3)
                     margin-right: 40px
 @media (max-width: 767px)
@@ -324,6 +325,12 @@
         &__title
             font-size: 30px
             line-height: 35px
+        &-social
+            &__about
+                margin: 0
+                margin-left: 20px
+        &-bottom
+            padding-top: 20px
 @media (max-width: 615px)
     .articles
         &-tag
@@ -419,3 +426,36 @@
             &__title
                 font-size: 23px
                 line-height: 35px
+    .footer
+        &__title
+        &__form
+            flex-direction: column
+        &__input
+            margin-bottom: 15px
+            &-group
+                width: 80%
+                margin-right: 0
+        &__button
+            align-self: center
+        &-links
+            &__block
+                flex-basis: 50%
+        &-social
+            flex-direction: column
+            align-items: center
+            &__image
+                flex-basis: 100%
+                margin-bottom: 10px
+            &__about
+                flex-basis: 100%
+                margin: 0
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-bottom: 10px
+            &__item
+                margin-right: 10px
+                &:nth-child(3)
+                    margin-right: 10px
+            &__links
+                flex-basis: 100%
