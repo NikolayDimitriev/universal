@@ -83,7 +83,10 @@
                 margin-bottom: 5px
                 font-size: 12px
                 line-height: 15px
-    .lifehack, .footer
+    .lifehack
+        &-same
+            padding: 15px 15px 15px 15px
+    .footer
         display: none
 @media (max-width: 992px)
     body
@@ -242,6 +245,22 @@
             display: none
         &-block
             margin-right: 0
+    .lifehack
+        &-wrapper
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(6, 1fr)
+        &-slider
+            grid-column: span 2
+            grid-row: span 3
+        &__career
+            grid-column: span 2
+            grid-row: 4 / 6
+        &__callisthenics
+            grid-column: 1
+            grid-row: 6
+        &__plugins
+            grid-column: 2
+            grid-row: 6
 @media (max-width: 767px)
     .container
         max-width: 576px
@@ -358,5 +377,15 @@
     .hero
         &-block
             height: 550px
-@media (max-width: 350px)
-    .container
+    .lifehack
+        &-wrapper
+            grid-template-rows: repeat(7, 1fr)
+        &__callisthenics
+            grid-column: span 2
+            grid-row: 6
+        &__plugins
+            grid-column: span 2
+            grid-row: 7
+        &-slider
+            &__title
+                font-size: 32px
