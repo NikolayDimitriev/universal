@@ -17,7 +17,64 @@
                 padding: 0 10px
             &__info
                 margin-right: 0
-    .articles, .investigation, .news, .lifehack, .footer
+    .articles
+        &-work
+            padding: 0
+            height: 340px
+            &__wrapper
+                border-radius: 10px 10px 0 0
+                padding: 10px 0 0 15px
+            &__comment
+                padding: 10px 0 0 15px
+            &__name
+                font-size: 12px
+            &__com
+                font-size: 12px
+        &-project
+            height: 340px
+            &__wrapper
+                left: 15px
+            &__popular
+                margin-bottom: 70px
+        &-check
+            height: 140px
+            &__block
+                padding-top: 10px
+                padding-left: 15px
+            &__title
+                font-size: 14px
+                line-height: 20px
+            &__download
+                padding-top: 9px
+                padding-bottom: 11px
+        &-tag
+            height: 340px
+            &__title
+                padding: 13px 15px
+            &__block
+                padding: 10px 0px 10px 15px
+            &__button
+                padding: 4px 10px
+        &-repeat
+            height: 140px
+            padding: 10px 10px 10px 15px
+            &__text
+                font-size: 12px
+                line-height: 15px
+            &__title
+                font-size: 14px
+        &-tools
+            height: 310px
+            &__image
+                height: 80%
+            &__title
+                padding: 5px 13px 10px 15px
+        &-social
+            height: 140px
+            padding: 15px 25px 23px 25px
+            &__block
+                padding: 0
+    .investigation, .news, .lifehack, .footer
         display: none
 @media (max-width: 992px)
     body
@@ -109,6 +166,59 @@
                 width: 100%
                 display: flex
                 justify-content: space-between
+    .articles
+        &-block
+            grid-template-columns: repeat(2, 1fr)
+            grid-template-rows: repeat(8, min-content)
+        &-work
+            grid-column: 1
+            grid-row: span 2
+            &__wrapper
+                background: $white-text
+            &__icon
+                display: none
+            &__number
+                display: none
+            &__name
+                font-size: 11px
+                margin-left: 6px
+            &__com
+                font-size: 9px
+        &-project
+            grid-column: 2
+            grid-row: span 2
+            &__popular
+                margin-bottom: 125px
+        &-check
+            grid-column: 1
+            grid-row: 3
+            &__title
+                font-size: 16px
+        &-tag
+            grid-column: 2
+            grid-row: 3 / 5
+            &__title
+                padding: 20px 20px
+            &__block
+                padding: 23px 25px 10px 20px
+            &__button
+                padding: 5px 20px
+        &-tools
+            grid-column: 1
+            grid-row: 4 / 6
+            height: 340px
+        &-repeat
+            display: flex
+            flex-direction: column
+            justify-content: space-between
+            &__title
+                font-size: 18px
+            &__text
+                font-size: 14px
+                line-height: 19px
+        &-social
+            &__block
+                padding: 0px 25px
 @media (max-width: 767px)
     .container
         max-width: 576px
@@ -124,8 +234,29 @@
             &__item
                 &--orange
                     padding-bottom: 19px
-@media (max-width: 698px)
-    .container
+    .articles
+        &-work
+            &__name
+                display: none
+            &__com
+                margin-left: 7px
+                font-size: 10px
+        &-project
+            &__popular
+                margin-bottom: 100px
+        &-tag
+            &__title
+                padding: 15px 20px
+            &__block
+                padding: 10px 5px 10px 20px
+@media (max-width: 615px)
+    .articles
+        &-tag
+            &__button
+                padding: 5px 10px
+        &-repeat
+            &__title
+                font-size: 14px
 @media (max-width: 576px)
     .hero
         &-block
@@ -139,6 +270,34 @@
                 &:not(:last-child)
                     border-bottom: 1px solid $tabs-text-color
                     border-right: none
+    .articles
+        &-block
+            grid-template-columns: 1fr
+            grid-template-rows: repeat(14, min-content)
+        &-work
+            grid-column: 1
+            grid-row: span 2
+            padding: 15px 15px 0 15px
+            &__comment
+                padding-top: 5px
+                padding-left: 10px
+        &-project
+            grid-column: 1
+            grid-row: 3 / 5
+        &-tag
+            grid-column: 1
+            grid-row: 5 / 7
+            height: 100%
+        &-tools
+            grid-column: 1
+            grid-row: 7 / 9
+        &-check
+            grid-column: 1
+            grid-row: 9
+        &-repeat
+            grid-column: 1
+        &-social
+            grid-column: 1
 @media (max-width: 480px)
     .hero
         &-block
