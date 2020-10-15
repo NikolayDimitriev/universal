@@ -74,7 +74,7 @@
             padding: 15px 25px 23px 25px
             &__block
                 padding: 0
-    .investigation, .news, .lifehack, .footer
+    .news, .lifehack, .footer
         display: none
 @media (max-width: 992px)
     body
@@ -84,7 +84,7 @@
     a.button
         &:hover
             cursor: default
-            background-color: inherit
+            background-color: $btn-color
     .container
         max-width: 700px
     .navbar
@@ -219,6 +219,10 @@
         &-social
             &__block
                 padding: 0px 25px
+    .investigation
+        &__title
+            font-size: 34px
+            line-height: 33px
 @media (max-width: 767px)
     .container
         max-width: 576px
@@ -257,6 +261,10 @@
         &-repeat
             &__title
                 font-size: 14px
+    .investigation
+        &__title
+            font-size: 28px
+            line-height: 28px
 @media (max-width: 576px)
     .hero
         &-block
@@ -298,6 +306,10 @@
             grid-column: 1
         &-social
             grid-column: 1
+    .investigation
+        &__title
+            font-size: 22px
+            line-height: 24px
 @media (max-width: 480px)
     .hero
         &-block
