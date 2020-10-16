@@ -49,6 +49,79 @@
             margin-top: 45px
             margin-bottom: 30px
             color: $bg-section
+    &-block
+        width: 100%
+        height: 625px
+        margin-top: 59px
+        margin-bottom: 44px
+        border: 1px solid $tabs-border-color
+        border-radius: 10px
+    &-slider
+        width: 100%
+        height: 555px
+        &__container
+            width: 100%
+            height: 100%
+        &__image
+            border-radius: 10px 10px 0 0
+            width: 100%
+            height: 100%
+        &__button
+            position: absolute
+            width: 60px
+            height: 60px
+            top: 50%
+            transform: translateY(-50%)
+            border: none
+            z-index: 100
+            cursor: pointer
+            background-repeat: no-repeat
+            background-position: center
+            background-color: transparent
+            &--next
+                right: 35px
+                background-image: url(../img/article/Arrow-slider-right.svg)
+            &--prev
+                left: 35px
+                background-image: url(../img/article/Arrow-slider-left.svg)
+    &-about
+        display: flex
+        align-items: center
+        &__description
+            height: 100%
+            flex-grow: 1
+            padding: 25px 0 25px 35px
+            font-size: 14px
+            line-height: 20px
+            color: $tabs-text-color
+            border-right: 1px solid $tabs-border-color
+        &__author
+            display: flex
+            align-items: center
+            flex-shrink: 0
+            height: 100%
+            width: 261px
+            padding-left: 30px
+        &__user
+            display: flex
+            justify-content: center
+            align-items: center
+            max-width: 200px
+            text-decoration: none
+        &__avatar
+            width: 45px
+            height: 45px
+            border-radius: 50%
+        &__info
+            margin-left: 10px
+        &__name
+            font-size: 14px
+            line-height: 20px
+            color: $tabs-text-color
+        &__profession
+            font-size: 12px
+            line-height: 15px
+            color: $input-text
 .author
     &-card
         width: 263px

@@ -23,6 +23,26 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
+
+    var articleSlider = new Swiper('.article-slider__container', {
+        // Optional parameters
+        loop: true,
+      
+        // Navigation arrows
+        navigation: {
+          nextEl: '.article-slider__button--next',
+          prevEl: '.article-slider__button--prev',
+        }
+
+    })
+
+    document.addEventListener('keyup', function(e) {
+        if(e.keyCode===37) {
+            articleSlider.slidePrev();
+        } else if (e.keyCode===39) {
+            articleSlider.slideNext();
+        }
+    });
     
     // валидация
     $('.form').each(function () {

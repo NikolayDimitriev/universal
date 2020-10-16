@@ -197,6 +197,15 @@
             &__title
                 font-size: 42px
                 line-height: 53px
+    .article
+        &-block
+            height: 550px
+        &-about
+            height: 70px
+            &__description
+                padding: 14px 0 14px 15px
+        &-slider
+            height: 480px
     .popular
         &-block
             max-width: 700px
@@ -324,6 +333,13 @@
             &__item
                 &--orange
                     padding-bottom: 19px
+    .article
+        &-block
+            height: 500px
+        &-slider
+            height: 410px
+        &-about
+            height: 90px
     .articles
         &-work
             &__name
@@ -382,6 +398,27 @@
             &__description
                 font-size: 15px
                 margin-bottom: 60px
+    .article
+        &-block
+            height: 400px
+            margin-top: 30px
+            margin-bottom: 20px
+        &-slider
+            height: 310px
+            &__button
+                width: 30px
+                height: 30px
+                border-radius: 50%
+                &--next
+                    right: 10px
+                &--prev
+                    left: 10px
+        &-about
+            height: 90px
+            &__description
+                padding: 0
+                padding-top: 10px
+                padding-left: 10px
     .author
         &-card
             float: none
@@ -464,6 +501,26 @@
             &__description
                 font-size: 13px
                 margin-bottom: 50px
+    .article
+        &-block
+            height: 460px
+        &-about
+            flex-direction: column
+            height: 150px
+            &__description
+                width: 100%
+                height: 50%
+                margin-bottom: 10px
+                border-right: none
+            &__author
+                width: 100%
+                height: 50%
+                padding: 0
+                display: flex
+                justify-content: center
+                align-items: center
+                padding-left: 10px
+                border-top: 1px solid $tabs-border-color
     .lifehack
         &-wrapper
             grid-template-rows: repeat(7, 1fr)
