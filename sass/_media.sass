@@ -20,6 +20,10 @@
     .article
         &-container
             margin: 0
+    .other
+        &-block
+            &__title
+                font-size: 15px
     .articles
         &-work
             padding: 0
@@ -218,6 +222,17 @@
     .author
         &-material
             margin: 0 0 25px 25px
+    .other
+        padding-bottom: 30px
+        &-block
+            flex-wrap: wrap
+            &__item
+                flex-basis: 47%
+                margin-bottom: 30px
+                &:nth-child(2)
+                    margin-right: 0
+            &__title
+                font-size: 19px
     .popular
         &-block
             max-width: 700px
@@ -401,6 +416,10 @@
         &__title
             font-size: 28px
             line-height: 28px
+    .other
+        &-block
+            &__title
+                font-size: 16px
 @media (max-width: 576px)
     .hero
         &-block
@@ -447,6 +466,15 @@
             float: none
             margin-left: auto
             margin-right: auto
+    .other
+        &-block
+            &__item
+                margin-right: 0
+                flex-basis: 100%
+                &:first-child
+                    margin-right: 0
+                &:nth-child(3)
+                    margin-right: 0
     .popular
         &-block
             width: 100%
