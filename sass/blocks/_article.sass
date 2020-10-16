@@ -41,6 +41,16 @@
         &--mt
             margin-top: 30px
             margin-bottom: 30px
+        &--mb
+            margin-bottom: 31px
+        &--quote
+            font-family: 'Roboto Slab', serif
+            font-size: 25px
+            line-height: 30px
+            color: $bg-section
+            z-index: 10
+        &--last
+            margin-top: 32px
     &__title
         &-text
             font-family: 'Roboto Slab', serif
@@ -122,6 +132,19 @@
             font-size: 12px
             line-height: 15px
             color: $input-text
+    &-quote
+        padding-top: 65px
+        position: relative
+        margin-bottom: 45px
+        &::before
+            position: absolute
+            content: ''
+            top: 44px
+            left: -19px
+            width: 70px
+            height: 70px
+            background-image: url(../img/article/Quote.png)
+            z-index: -1
 .author
     &-card
         width: 263px
@@ -162,3 +185,46 @@
             font-size: 14px
             line-height: 20px
             +bold
+    &-material
+        float: right
+        width: 263px
+        padding: 0
+        align-items: start
+        border: none
+        margin-top: -74px
+        &__title
+            margin-top: 0
+            margin-bottom: 20px
+            font-family: 'Roboto Slab', serif
+            font-size: 20px
+            line-height: 25px
+            color: $bg-section
+        &__animal
+            border-radius: 10px
+        &__subtitle
+            margin-top: 15px
+            margin-bottom: 5px
+            font-family: 'Roboto Slab', serif
+            font-size: 16px
+            line-height: 25px
+            color: $bg-section
+            max-width: 187px
+        &__text
+            font-size: 14px
+            line-height: 20px
+            color: $tabs-text-color
+            margin-top: 0
+            margin-bottom: 20px
+        &__stats
+            font-size: 12px
+            line-height: 15px
+            color: $input-text
+            display: flex
+            align-items: center
+        &__data
+            display: inline-block
+            margin-left: 5px
+            margin-right: 11px
+        &__number
+            display: inline-block
+            margin-left: 5.75px
