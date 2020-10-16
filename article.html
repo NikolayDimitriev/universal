@@ -10,19 +10,19 @@
     <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    <header class="navbar">
+<body class="article">
+    <header class="navbar navbar__mobile_fixed navbar-article navbar__mobile_fixed--article">
         <div class="container">
-            <div class="navbar-block">
+            <div class="navbar-block navbar-block--article">
                 <div class="navbar-logo">
                     <a href="./main.html" class="navbar-logo__icon">
-                        <img src="img/header/logo.svg" alt="Logo: Universal" class="navbar-logo__image">
+                        <img src="img/Symbol.svg" alt="Logo: Universal" class="navbar-logo__image">
                     </a>
-                    <a href="./main.html" class="navbar-logo__text">Universal</a>
+                    <a href="./main.html" class="navbar-logo__text navbar-logo__text--article">Universal</a>
                 </div>
                 <!-- /.navbar__logo -->
 
-                <ul class="navbar-menu">
+                <ul class="navbar-menu navbar-menu--article">
                     <li class="navbar-menu__item">
                         <a href="#" class="navbar-menu__link">Статьи</a>
                     </li>
@@ -47,26 +47,117 @@
                 </ul>
 
                 <form action="#" class="search navbar__search">
-                    <input type="text" class="search__input" placeholder="Поиск" required minlength="2">
-                    <button class="search__button">
+                    <input type="text" class="search__input search__input--article" placeholder="Поиск" required minlength="2">
+                    <button class="search__button search__button--article">
                         <img src="img/header/Search.png" alt="Иконка поиска">
                     </button>
                 </form>
                 <!-- /.navbar__search -->
-
+                <button class="menu-button navbar-block__menu-button navbar-block__menu-button--article">
+                    <span class="menu-button__line menu-button__line--article"></span>
+                    <span class="menu-button__line menu-button__line--article"></span>
+                    <span class="menu-button__line menu-button__line--article"></span>
+                </button>
             </div>
             <!-- /.navbar-block -->
+            <nav class="navbar-bottom">
+                <div class="container">
+                    <ul class="navbar-menu navbar-menu--mobile-visible">
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <form action="#" class="search navbar__search navbar__search--mobile-visible">
+                                <input type="text" class="search__input" placeholder="Поиск" required minlength="2">
+                                <button class="search__button">
+                                    <img src="img/header/Search.png" alt="Иконка поиска">
+                                </button>
+                            </form>
+                            <!-- /.navbar__search -->
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#" class="navbar-menu__link">Статьи</a>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#" class="navbar-menu__link">Новости</a>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#" class="navbar-menu__link">Курсы</a>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#" class="navbar-menu__link">HTML</a>
+                        </li>         
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#" class="navbar-menu__link">CSS</a>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#" class="navbar-menu__link">JavaScript</a>
+                        </li>
+                        <li class="navbar-menu__item navbar-menu__item--mobile">
+                            <a href="#" class="navbar-menu__link">Web Design</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- /.navbar-bottom  -->
         </div>
         <!-- /.container -->
     </header>
     <!-- /.navbar -->
+
+    <section class="main">
+        <div class="container">
+            <div class="main-block">
+                <div class="main-block__nav">
+                    <span class="main-block__theme">Новости</span>
+                    <div class="main-block__btn">
+                        <a href="main.html" class="main-block__link">
+                            <img src="img/main/Home.svg" alt="Иконка дома">
+                            <span class="main-block__button main-block__button--main">На главную</span>
+                        </a>
+                        <a href="second.html" class="main-block__link">
+                            <img src="img/main/Arrow-left.svg" alt="Иконка влево">
+                            <span class="main-block__button main-block__button--prev">Назад</span>
+                        </a>
+                        <a href="second.html" class="main-block__link">
+                            <span class="main-block__button main-block__button--next">Вперед</span>
+                            <img src="img/main/Arrow-right.svg" alt="Иконка вправо">
+                        </a>
+                    </div>
+                </div>
+                <!-- /.main-block__nav -->
+                <div class="main-block__text">
+                    <img src="img/main/Bookmark.png" alt="Иконка заметок" class="main-block__note">
+                    <div class="main-block__info">
+                        <h1 class="main-block__title">Новый налоговый режим для фрилансеров — налог на проф. доход</h1>
+                        <p class="main-block__description">Руководитель налоговой заявил, что этот режим “поможет выйти из тени” тем, кто работает неофициально. Разобрались, как работает режим и кому он подходит, а кому нет.</p>
+                        <!-- /.main-block__description -->
+                        <div class="main-block__stats">
+                            <img src="img/main/Clock.png" alt="иконка часов">
+                            <span class="main-block__data">6 августа, 10:30</span>
+                            <img src="img/main/Heart.png" alt="иконка лайков">
+                            <span class="main-block__number">830</span>
+                            <img src="img/main/Comment.png" alt="иконка комментариев">
+                            <span class="main-block__number">19</span>
+                        </div>
+                        <!-- /.main-block__stats -->
+                    </div>
+                    <!-- /.main-block__info -->
+                </div>
+                <!-- /.main-block__info -->
+            </div>
+            <!-- /.main-block -->
+        </div>
+        <!-- /.container -->
+    </section>
+    <!-- /.main -->
 
     <footer class="footer">
         <div class="container">
             <h2 class="footer__title">Подпишитесь на нашу рассылку</h2>
             <!-- /.footer__title -->
             <form action="send.php" method="POST" class="form footer__form">
-                <input type="email" class="footer__input" required placeholder="Email">
+                <div class="footer__input-group">
+                    <input type="email" class="footer__input" required placeholder="Email" name="email">
+                </div>
+                <!-- /.footer__input-group -->
                 <button class="button footer__button">Подписаться</button>
             </form>
             <!-- /.form footer__form -->
@@ -185,14 +276,20 @@
             </div>
             <!-- /.footer-links -->
             <div class="footer-social">
+                <a href="#" class="footer-social__image">
+                    <img src="img/Symbol.svg" alt="логотип" class="footer-social__logo">
+                </a>
                 <div class="footer-social__about">
-                    <a href="#" class="footer-social__item">
-                        <img src="img/footer/Symbol.svg" alt="логотип" class="footer-social__logo">
-                    </a>
-                    <a href="#" class="footer-social__item">Контакты</a>
-                    <a href="#" class="footer-social__item">Работа у нас</a>
-                    <a href="#" class="footer-social__item">Реклама</a>
-                    <a href="#" class="footer-social__item">Партнерство</a>
+                    <div class="footer-social__block">
+                        <a href="#" class="footer-social__item">Контакты</a>
+                        <a href="#" class="footer-social__item">Работа у нас</a>
+                    </div>
+                    <!-- /.footer-social__block -->
+                    <div class="footer-social__block">
+                        <a href="#" class="footer-social__item">Реклама</a>
+                        <a href="#" class="footer-social__item">Партнерство</a>
+                    </div>
+                    <!-- /.footer-social__block -->
                 </div>
                 <!-- /.footer-social__about -->
                 <div class="footer-social__links">
@@ -213,7 +310,7 @@
             </div>
             <!-- /.footer-social -->
             <div class="footer-bottom">
-                <span class="footer-bottom__text">Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб разработке: статьи, новости, <br> видеоуроки, подборки, ссылки и курсы. Материалы на сайте бесплатны, но при копировании, указывайте ссылку.</span> 
+                <span class="footer-bottom__text">Universal — это онлайн издание, в котором мы публикуем полезные материалы о веб разработке: статьи, новости, видеоуроки, подборки, ссылки и курсы. Материалы на сайте бесплатны, но при копировании, указывайте ссылку.</span> 
                 <!-- /.footer-bottom__text -->
                 <span class="footer-bottom__year">© 2020 Universal Magazine</span> 
                 <!-- /.footer-bottom__year -->
@@ -223,7 +320,9 @@
         <!-- /.container -->
     </footer>
     <!-- /.footer -->
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/index.js"></script>
+    <script src="js/article.js"></script>
 </body>
 </html>

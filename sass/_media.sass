@@ -124,6 +124,8 @@
                 right: 0
                 z-index: 99
                 background-color: $bg-section
+                &--article
+                    background-color: $white-text
         &-bottom
             position: fixed
             bottom: 0
@@ -171,10 +173,26 @@
                 width: 16px
                 height: 1px
                 background-color: $white-text
+                &--article
+                    background-color: $bg-section
     .hero
         padding-top: 460px
         background-color: $bg-section
         padding-bottom: 20px
+    .main
+        &-block
+            &__nav
+                margin-left: 0
+                margin-right: 0
+            &__note
+                top: -10%
+                right: 0
+                left: 97%
+            &__info
+                padding-left: 0
+            &__title
+                font-size: 42px
+                line-height: 53px
     .popular
         &-block
             max-width: 700px
@@ -349,6 +367,17 @@
     .hero
         &-block
             height: 500px
+    .main
+        padding-bottom: 20px
+        &-block
+            &__note
+                left: 92%
+            &__title
+                font-size: 34px
+                line-height: 43px
+            &__description
+                font-size: 15px
+                margin-bottom: 60px
     .popular
         &-block
             width: 100%
@@ -413,6 +442,18 @@
     .hero
         &-block
             height: 550px
+    .main
+        &-block
+            &__nav
+                margin-bottom: 30px
+            &__btn
+                flex-wrap: wrap
+            &__title
+                font-size: 25px
+                line-height: 33px
+            &__description
+                font-size: 13px
+                margin-bottom: 78px
     .lifehack
         &-wrapper
             grid-template-rows: repeat(7, 1fr)
@@ -429,7 +470,6 @@
                 font-size: 23px
                 line-height: 35px
     .footer
-        &__title
         &__form
             flex-direction: column
         &__input

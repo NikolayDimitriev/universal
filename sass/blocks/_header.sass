@@ -1,6 +1,9 @@
 .navbar
     background-color: $bg-section
     padding-bottom: 15px
+    &-article
+        background-color: $white-text
+        padding-bottom: 0
     &-block
         display: flex
         align-items: center
@@ -11,6 +14,8 @@
         &__menu
             &-button
                 display: none
+        &--article
+            padding-bottom: 5px
     &-bottom
         display: none
         &--visible
@@ -31,12 +36,16 @@
             color: inherit
             font-family: 'Roboto Slab', serif
             font-size: 24px
+            &--article
+                color: $btn-color
     &-menu
         list-style: none
         display: flex
         justify-content: space-between
         margin-left: 52px
         margin-right: 94px
+        &--article
+            color: $input-text
         &__item
             &:not(:last-child)
                 margin-right: 30px
@@ -77,6 +86,10 @@
         outline: 0
         &::placeholder
             color: $input-text
+        &--article
+            background-color: $active-tab
+            font-size: 14px
+            line-height: 20px
     &__button
         position: absolute
         display: flex
@@ -89,3 +102,7 @@
         border: none
         background-color: $gray-form
         cursor: pointer
+        &--article
+            background-color: $active-tab
+.article
+    background-color: $white-text
