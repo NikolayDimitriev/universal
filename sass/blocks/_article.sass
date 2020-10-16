@@ -145,6 +145,59 @@
             height: 70px
             background-image: url(../img/article/Quote.png)
             z-index: -1
+    &-btn
+        display: flex
+        flex-wrap: wrap
+        margin-top: 40px
+        padding-bottom: 60px
+        border-bottom: 1px solid $tabs-border-color
+        max-width: 653px
+        &__item
+            background-color: $white-text
+            font-family: 'Roboto Slab', serif
+            font-size: 14px
+            line-height: 20px
+            color: $bg-section
+            padding: 5px 12px
+            border: none
+            border: 1px solid $tabs-border-color
+            border-radius: 5px
+            margin-right: 10px
+            &:hover
+                border-color: $btn-color
+    &-repost
+        padding-bottom: 90px
+        &__title
+            font-family: 'Roboto Slab', serif
+            font-size: 25px
+            line-height: 30px
+            color: $bg-section
+            margin-top: 30px
+            margin-bottom: 25px
+        &__btn
+            display: flex
+            flex-wrap: wrap
+        &__item
+            display: flex
+            align-items: center
+            padding: 10px 20px
+            background: $btn-color
+            border-radius: 20px
+            border: none
+            margin-right: 14px
+            font-family: 'Roboto Slab', serif
+            font-size: 14px
+            line-height: 20px
+            color: $white-text
+        &__text
+            margin-left: 10px
+            margin-right: 8px
+        &__number
+            font-size: 14px
+            line-height: 20px
+            color: $btn-article-number-color
+            &--active
+                color: $btn-article-number-color-active
 .author
     &-card
         width: 263px

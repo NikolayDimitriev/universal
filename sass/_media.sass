@@ -206,6 +206,15 @@
                 padding: 14px 0 14px 15px
         &-slider
             height: 480px
+        &-btn
+            &__item
+                &:hover
+                    border-color: $tabs-border-color
+                    background-color: $white-text
+        &-repost
+            padding-bottom: 40px
+            &__item
+                margin-bottom: 10px
     .author
         &-material
             margin: 0 0 25px 25px
@@ -540,6 +549,10 @@
                 align-items: center
                 padding-left: 10px
                 border-top: 1px solid $tabs-border-color
+        &-btn
+            padding-bottom: 20px
+            &__item
+                margin-bottom: 10px
     .lifehack
         &-wrapper
             grid-template-rows: repeat(7, 1fr)
