@@ -1,3 +1,11 @@
+@media (min-width: 993px)
+    .hover
+        &-button
+            &:hover
+                background-color: $hover-btn-color
+            &--white
+                &:hover
+                    background-color: $tabs-border-color
 @media (max-width: 1200px)
     .container
         max-width: 960px
@@ -222,6 +230,12 @@
     .author
         &-material
             margin: 0 0 25px 25px
+            &__subtitle
+                cursor: default
+            &__animal
+                cursor: default
+            &__comment
+                cursor: default
     .other
         padding-bottom: 30px
         &-block
