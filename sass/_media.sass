@@ -233,6 +233,21 @@
                     margin-right: 0
             &__title
                 font-size: 19px
+    .comments
+        &-container
+            margin-left: 0
+        &-header
+            &__title
+                line-height: 0
+                font-size: 22px
+            &__number
+                font-size: 25px
+                line-height: 0
+        &-block
+            &__text
+                font-size: 14px
+                line-height: 20px
+                margin-top: 5px
     .popular
         &-block
             max-width: 700px
@@ -475,6 +490,9 @@
                     margin-right: 0
                 &:nth-child(3)
                     margin-right: 0
+    .comments
+        &-form
+            padding: 15px 40px 35px 15px
     .popular
         &-block
             width: 100%
@@ -581,6 +599,31 @@
             padding-bottom: 20px
             &__item
                 margin-bottom: 10px
+    .comments
+        &-header
+            flex-direction: column
+            align-items: start
+            padding-bottom: 15px
+            &__left
+                margin-bottom: 10px
+        &-block
+            &__item
+                &--response
+                    padding-left: 20px
+            &__avatar
+                width: 50px
+                height: 50px
+            &__head
+                flex-direction: column
+                align-items: start
+        &-form
+            &__title
+                margin-left: 0
+                font-size: 16px
+            &__image
+                width: 50px
+                height: 50px
+                margin-top: 10px
     .lifehack
         &-wrapper
             grid-template-rows: repeat(7, 1fr)
