@@ -310,7 +310,7 @@
                         <img src="img/other/Eye.png" alt="Icon: eye">
                         <span class="other-block__number">1,904</span>
                         <!-- /.other-block__number -->
-                        <img src="img/other/Comment.png" alt="Icon: comment">
+                        <img src="img/other/Comment.png" alt="Icon: comment" class="other-block__icon">
                         <span class="other-block__number">82</span>
                         <!-- /.other-block__number -->
                     </div>
@@ -325,7 +325,7 @@
                         <img src="img/other/Eye.png" alt="Icon: eye">
                         <span class="other-block__number">2,873</span>
                         <!-- /.other-block__number -->
-                        <img src="img/other/Comment.png" alt="Icon: comment">
+                        <img src="img/other/Comment.png" alt="Icon: comment" class="other-block__icon">
                         <span class="other-block__number">982</span>
                         <!-- /.other-block__number -->
                     </div>
@@ -340,7 +340,7 @@
                         <img src="img/other/Eye.png" alt="Icon: eye">
                         <span class="other-block__number">821</span>
                         <!-- /.other-block__number -->
-                        <img src="img/other/Comment.png" alt="Icon: comment">
+                        <img src="img/other/Comment.png" alt="Icon: comment" class="other-block__icon">
                         <span class="other-block__number">30</span>
                         <!-- /.other-block__number -->
                     </div>
@@ -355,7 +355,7 @@
                         <img src="img/other/Eye.png" alt="Icon: eye">
                         <span class="other-block__number">5,030</span>
                         <!-- /.other-block__number -->
-                        <img src="img/other/Comment.png" alt="Icon: comment">
+                        <img src="img/other/Comment.png" alt="Icon: comment" class="other-block__icon">
                         <span class="other-block__number">495</span>
                         <!-- /.other-block__number -->
                     </div>
@@ -370,22 +370,210 @@
     <!-- /.other -->
 
     <section class="comments">
-        <div class="comments-container">
-            <div class="comments-header">
-                <div class="comments-header__left">
-                    <h2 class="comments-header__title">Комментарии</h2>
-                    <span class="comments-header__number">19</span>
+        <div class="container">
+            <div class="comments-container">
+                <div class="comments-header">
+                    <div class="comments-header__left">
+                        <h2 class="comments-header__title">Комментарии</h2>
+                        <span class="comments-header__number">19</span>
+                    </div>
+                    <button class="button comments-header__right">
+                        <img src="img/comments/Pencil.png" alt="Icon: Pencil">
+                        <span class="comments-header__text">Добавить комментарий</span>
+                    </button>
                 </div>
-                <button class="button comments-header__right">
-                    <img src="img/comments/Pencil.png" alt="Icon: Pencil">
-                    <span class="comments-header__text">Добавить комментарий</span>
-                </button>
+                <!-- /.comments-header -->
+                <div class="comments-block">
+                    <div class="comments-block__item">
+                        <img src="img/comments/slider-avatar.png" alt="Аватар комментатора" class="comments-block__avatar">
+                        <div class="comments-block__info">
+                            <div class="comments-block__head">
+                                <h2 class="comments-block__title">Михаил Степашин</h2>
+                                <span class="comments-block__data">17 июля, 18:38</span>
+                            </div>
+                            <!-- /.comments-block__head -->
+                            <p class="comments-block__text">Хочу заметить, что автор этой статьи не написал, что не все могут <br> получить статус самозанятого. Этот режим еще не ввели во всех <br> регионах. Но если в вашем регионе есть, то поздравляю.</p>
+                            <div class="comments-block__stats">
+                                <img src="img/comments/Comment.png" alt="Icon: comment">
+                                <span class="comments-block__response">Ответить</span>
+                                <img src="img/comments/Thumb.png" alt="Icon: like">
+                                <span class="comments-block__number comments-block__number--positive">+10</span>
+                                <img src="img/comments/Thumb-2.png" alt="Icon: dislike">
+                            </div>
+                            <!-- /.comments-block__stats -->
+                        </div>
+                    </div>
+                    <!-- /.comments-block__item -->
+                    <div class="comments-block__item comments-block__item--response">
+                        <img src="img/comments/avatar.png" alt="Аватар комментатора" class="comments-block__avatar">
+                        <div class="comments-block__info">
+                            <div class="comments-block__head">
+                                <h2 class="comments-block__title">Мира Стахова</h2>
+                                <span class="comments-block__data">17 июля, 18:41</span>
+                            </div>
+                            <!-- /.comments-block__head -->
+                            <p class="comments-block__text">Да, спасибо за замечание. Добавлю список регионов, где этот режим уже действует и буду периодически обновлять его. Потому что обещали ввести этот режим везде.</p>
+                            <div class="comments-block__stats">
+                                <img src="img/comments/Comment.png" alt="Icon: comment">
+                                <span class="comments-block__response">Ответить</span>
+                                <img src="img/comments/Thumb.png" alt="Icon: like">
+                                <span class="comments-block__number">0</span>
+                                <img src="img/comments/Thumb-2.png" alt="Icon: dislike">
+                            </div>
+                            <!-- /.comments-block__stats -->
+                        </div>
+                    </div>
+                    <!-- /.comments-block__item -->
+                    <div class="comments-block__item">
+                        <img src="img/comments/comment-1.png" alt="Аватар комментатора" class="comments-block__avatar">
+                        <div class="comments-block__info">
+                            <div class="comments-block__head">
+                                <h2 class="comments-block__title">Анжела Иванова</h2>
+                                <span class="comments-block__data">17 июля, 18:53</span>
+                            </div>
+                            <!-- /.comments-block__head -->
+                            <p class="comments-block__text comments-block__text--three">Если честно, кажется, что этот налоговый режим ввели, чтобы <br> собрать больше денег с народа. Я, конечно, понимаю, что бюджеты <br> надо пополнять, но не лучше ли обложить налогом богатых?</p>
+                            <div class="comments-block__stats">
+                                <img src="img/comments/Comment.png" alt="Icon: comment">
+                                <span class="comments-block__response">Ответить</span>
+                                <img src="img/comments/Thumb.png" alt="Icon: like">
+                                <span class="comments-block__number comments-block__number--negative">-3</span>
+                                <img src="img/comments/Thumb-2.png" alt="Icon: dislike">
+                            </div>
+                            <!-- /.comments-block__stats -->
+                        </div>
+                    </div>
+                    <!-- /.comments-block__item -->
+                    <div class="comments-block__item comments-block__item--bb">
+                        <img src="img/comments/comment-2.png" alt="Аватар комментатора" class="comments-block__avatar">
+                        <div class="comments-block__info">
+                            <div class="comments-block__head">
+                                <h2 class="comments-block__title">Крис Яков</h2>
+                                <span class="comments-block__data">17 июля, 19:12</span>
+                            </div>
+                            <!-- /.comments-block__head -->
+                            <p class="comments-block__text">Такой режим уже давно работает в продвинутых странах, почему <br> его ввели только сейчас, непонятно. Хотелось бы, чтобы это все <br> заработало в моем регионе, буду в числе первых!</p>
+                            <div class="comments-block__stats">
+                                <img src="img/comments/Comment.png" alt="Icon: comment">
+                                <span class="comments-block__response">Ответить</span>
+                                <img src="img/comments/Thumb.png" alt="Icon: like">
+                                <span class="comments-block__number">0</span>
+                                <img src="img/comments/Thumb-2.png" alt="Icon: dislike">
+                            </div>
+                            <!-- /.comments-block__stats -->
+                        </div>
+                    </div>
+                    <!-- /.comments-block__item -->
+                    <div class="comments-block__item comments-block__item--button">
+                        <button class="button comments-block__button">
+                            <img src="img/comments/Loading.png" alt="Icon: loading">
+                            <span class="comments-block__button-text">загрузить еще</span>
+                        </button> 
+                        <!-- /.button comments-block__button -->
+                    </div>
+                    <!-- /.comments-block__item -->
+                    <div class="comments-block__item comments-block__item--dn comments-block__item--first">
+                        <img src="img/comments/slider-avatar.png" alt="Аватар комментатора" class="comments-block__avatar">
+                        <div class="comments-block__info">
+                            <div class="comments-block__head">
+                                <h2 class="comments-block__title">Михаил Степашин</h2>
+                                <span class="comments-block__data">17 июля, 18:38</span>
+                            </div>
+                            <!-- /.comments-block__head -->
+                            <p class="comments-block__text">Хочу заметить, что автор этой статьи не написал, что не все могут <br> получить статус самозанятого. Этот режим еще не ввели во всех <br> регионах. Но если в вашем регионе есть, то поздравляю.</p>
+                            <div class="comments-block__stats">
+                                <img src="img/comments/Comment.png" alt="Icon: comment">
+                                <span class="comments-block__response">Ответить</span>
+                                <img src="img/comments/Thumb.png" alt="Icon: like">
+                                <span class="comments-block__number comments-block__number--positive">+10</span>
+                                <img src="img/comments/Thumb-2.png" alt="Icon: dislike">
+                            </div>
+                            <!-- /.comments-block__stats -->
+                        </div>
+                    </div>
+                    <!-- /.comments-block__item -->
+                    <div class="comments-block__item comments-block__item--response comments-block__item--dn">
+                        <img src="img/comments/avatar.png" alt="Аватар комментатора" class="comments-block__avatar">
+                        <div class="comments-block__info">
+                            <div class="comments-block__head">
+                                <h2 class="comments-block__title">Мира Стахова</h2>
+                                <span class="comments-block__data">17 июля, 18:41</span>
+                            </div>
+                            <!-- /.comments-block__head -->
+                            <p class="comments-block__text">Да, спасибо за замечание. Добавлю список регионов, где этот режим уже действует и буду периодически обновлять его. Потому что обещали ввести этот режим везде.</p>
+                            <div class="comments-block__stats">
+                                <img src="img/comments/Comment.png" alt="Icon: comment">
+                                <span class="comments-block__response">Ответить</span>
+                                <img src="img/comments/Thumb.png" alt="Icon: like">
+                                <span class="comments-block__number">0</span>
+                                <img src="img/comments/Thumb-2.png" alt="Icon: dislike">
+                            </div>
+                            <!-- /.comments-block__stats -->
+                        </div>
+                    </div>
+                    <!-- /.comments-block__item -->
+                    <div class="comments-block__item comments-block__item--dn">
+                        <img src="img/comments/comment-1.png" alt="Аватар комментатора" class="comments-block__avatar">
+                        <div class="comments-block__info">
+                            <div class="comments-block__head">
+                                <h2 class="comments-block__title">Анжела Иванова</h2>
+                                <span class="comments-block__data">17 июля, 18:53</span>
+                            </div>
+                            <!-- /.comments-block__head -->
+                            <p class="comments-block__text comments-block__text--three">Если честно, кажется, что этот налоговый режим ввели, чтобы <br> собрать больше денег с народа. Я, конечно, понимаю, что бюджеты <br> надо пополнять, но не лучше ли обложить налогом богатых?</p>
+                            <div class="comments-block__stats">
+                                <img src="img/comments/Comment.png" alt="Icon: comment">
+                                <span class="comments-block__response">Ответить</span>
+                                <img src="img/comments/Thumb.png" alt="Icon: like">
+                                <span class="comments-block__number comments-block__number--negative">-3</span>
+                                <img src="img/comments/Thumb-2.png" alt="Icon: dislike">
+                            </div>
+                            <!-- /.comments-block__stats -->
+                        </div>
+                    </div>
+                    <!-- /.comments-block__item -->
+                    <div class="comments-block__item comments-block__item--bb comments-block__item--dn">
+                        <img src="img/comments/comment-2.png" alt="Аватар комментатора" class="comments-block__avatar">
+                        <div class="comments-block__info">
+                            <div class="comments-block__head">
+                                <h2 class="comments-block__title">Крис Яков</h2>
+                                <span class="comments-block__data">17 июля, 19:12</span>
+                            </div>
+                            <!-- /.comments-block__head -->
+                            <p class="comments-block__text">Такой режим уже давно работает в продвинутых странах, почему <br> его ввели только сейчас, непонятно. Хотелось бы, чтобы это все <br> заработало в моем регионе, буду в числе первых!</p>
+                            <div class="comments-block__stats">
+                                <img src="img/comments/Comment.png" alt="Icon: comment">
+                                <span class="comments-block__response">Ответить</span>
+                                <img src="img/comments/Thumb.png" alt="Icon: like">
+                                <span class="comments-block__number">0</span>
+                                <img src="img/comments/Thumb-2.png" alt="Icon: dislike">
+                            </div>
+                            <!-- /.comments-block__stats -->
+                        </div>
+                    </div>
+                    <!-- /.comments-block__item -->
+                </div>
+                <!-- /.comments-block -->
+                <div class="comments-form">
+                    <img src="img/comments/form-avatar.png" alt="Аватар формы" class="comments-form__image">
+                    <div class="comments-form__info">
+                        <h2 class="comments-form__title">Что вы думаете на этот счет? </h2>
+                        <form action="send.php" method="POST" class="form comments-form__form">
+                            <textarea name="message" id="message" class="comments-form__message"></textarea>
+                            <button class="button comments-form__button">
+                                <span class="comments-form__send">Отправить</span>
+                                <img src="img/Arrow.png" alt="Icon: arrow">
+                            </button>
+                        </form>
+
+                    </div>
+                    <!-- /.comments-form__info -->
+                </div>
+                <!-- /.comments-block__form -->
             </div>
-            <!-- /.comments-header -->
-            <div class="comments-block"></div>
-            <!-- /.comments-block -->
+            <!-- /.comments-container -->
         </div>
-        <!-- /.comments-container -->
+        <!-- /.container -->
     </section>
     <!-- /.comments -->
 

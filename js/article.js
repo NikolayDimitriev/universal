@@ -1,6 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() {
     const header = document.querySelector('.navbar'),
-        main = document.querySelector('.main');
+        main = document.querySelector('.main'),
+        comments = document.querySelector('.comments'),
+        commentsItemNone = comments.querySelectorAll('.comments-block__item--dn');
     
     header.addEventListener('click', function(e) {
       const target = e.target;
@@ -41,6 +43,17 @@ document.addEventListener('DOMContentLoaded', function() {
             articleSlider.slidePrev();
         } else if (e.keyCode===39) {
             articleSlider.slideNext();
+        }
+    });
+
+    comments.addEventListener('click', function(e) {
+        const target = e.target;
+
+        if (target.closest('.comments-block__button')) {
+            commentsItemNone.forEach(function(item) {
+                item.classList.remove('comments-block__item--dn');
+            });
+            target.closest('.comments-block__button').style.display = 'none';
         }
     });
     
