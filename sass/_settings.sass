@@ -2,6 +2,7 @@
     box-sizing: border-box
 body
     background-color: $body-bg-color
+    position: relative
     +reg
 .container
     max-width: 1140px
@@ -14,10 +15,19 @@ button
     cursor: pointer
 .button
     text-decoration: none
+    &-top
+        position: fixed
+        right: 45px
+        bottom: 45px
+        z-index: 100
+        &__image
+            width: 45px
+            height: 45px
 a
     text-decoration: none
     &:hover
         cursor: pointer
 .invalid
+    margin-bottom: 10px
     color: red
     border-bottom: 1px solid red

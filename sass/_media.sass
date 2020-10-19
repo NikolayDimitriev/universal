@@ -6,6 +6,68 @@
             &-white
                 &:hover
                     background-color: $tabs-border-color
+    .button
+        &-top
+            cursor: pointer
+    .navbar
+        &-menu
+            &__link
+                &::after
+                    display: block
+                    content: ""
+                    height: 3px
+                    width: 0%
+                    background-color: $btn-color
+                    transition: width 0.4s ease-in-out
+                &:hover
+                    &::after
+                        width: 100%
+    .articles
+        &-tag
+            &__button
+                &:hover
+                    border: 1px solid $btn-color
+        &-repeat
+            &:hover
+                border: 1px solid $btn-color
+                padding: 24px 24px 29px 24px
+        &-social
+            &__icon
+                &:hover
+                    background-color: $instagram-bg
+    .footer
+        &-links
+            &__link
+                &::after
+                    display: block
+                    content: ""
+                    height: 3px
+                    width: 0%
+                    background-color: $btn-color
+                    transition: width 0.4s ease-in-out
+                &:hover
+                    &::after
+                        width: 100%
+        &-social
+            &__item
+                &::after
+                    display: block
+                    content: ""
+                    height: 3px
+                    width: 0%
+                    background-color: $btn-color
+                    transition: width 0.4s ease-in-out
+                &:hover
+                    &::after
+                        width: 100%
+            &__icon
+                &:hover
+                    background-color: $popular-bg-color
+    .lifehack
+        &-same
+            &:hover
+                border: 1px solid $btn-color
+                padding: 24px 24px 29px 24px
 @media (max-width: 1200px)
     .container
         max-width: 960px
@@ -118,11 +180,13 @@
     a.button
         &:hover
             cursor: default
-            background-color: $btn-color
+    a
+        &:hover
+            cursor: default
     .container
         max-width: 700px
     .navbar
-        padding-bottom: 0
+        padding-bottom: 10px
         &-block
             &__menu
                 &-button
@@ -567,6 +631,10 @@
                 display: flex
                 flex-direction: column
                 justify-content: space-between
+    .button
+        &-top
+            right: 15px
+            bottom: 15px
 @media (max-width: 480px)
     .hero
         &-block
