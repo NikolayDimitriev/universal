@@ -3,7 +3,8 @@
 
 Ссылка: https://nikolaydimitriev.github.io/universal/main.html
 
-ТЗ: https://trello.com/invite/b/mKK6mbR1/7f4e21078d5110e5a2c858481c020df8/димитриев-николай-выпускной-проект-web-start-glo-academy
+Ссылка на техническое задание: [Сложный уровень | ТЗ на верстку | Веб Старт](https://docs.google.com/document/d/1RgGko8-RevMrbtFiZ1ruVTjjIvlQP_RVzMom9MPs6K8/edit#heading=h.iqpymopeh9no)
+Ссылка на дизайн-макет: [Figma](https://www.figma.com/file/OPcmQW9vazCyr2v6kEn3zi/Web-Start-—-Hard-(Rus)?node-id=0%3A1)
 
 Главный экран: 
 
